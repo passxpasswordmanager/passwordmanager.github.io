@@ -14,6 +14,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -30,14 +31,22 @@
         </div>
 
         <div class="password-manager">
-            <h2>Saved Passwords</h2>
+            <h2>Password Manager</h2>
             <form id="password-form" onsubmit="savePassword(event)">
                 <div class="form-group">
-                    <input type="text" id="service" placeholder="website Name" required>
-                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="text" id="service" placeholder="Service Name" required>
+                    <br/>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <input type="checkbox"  onclick="myfunction()">Show Password</button>
+                    </div>
                 </div>
+                <br/>
                 <button type="submit">Save</button>
             </form>
+            <div class="password-saver">
+                <h3>Saved Passwords</h3>
+            </div>
             <ul id="password-list"></ul>
         </div>
     </div>

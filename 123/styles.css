@@ -70,7 +70,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+h2 ,h3 {
     text-align: center;
     color: #444;
     margin-bottom: 20px;
@@ -85,14 +85,20 @@ h2 {
 }
 
 .form-group {
-    display: flex;
+    display: table-cell;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom:210px;
+    max-width: 80vw;
+    margin: 23px auto;
 }
+password-container {
+    margin-top:100px ;
+}
+
 
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 input[type="number"], input[type="text"] {
